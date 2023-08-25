@@ -7,8 +7,8 @@
 
 .header{
     display: flex;
+    background-color: limegreen;
     height: 70px;
-    border: 1px solid black;
     align-items: center;
 }
 .header div{
@@ -16,6 +16,11 @@
 }
 .header .logo{
     flex: 0.7;
+    text-align: center;
+}
+.header .logo img{
+    width: 40%;
+    transform: translateY(+20%);
 }
 .header ul{
     list-style: none;
@@ -26,9 +31,11 @@
 .header ul li{
     display: inline-block;
     transition: 0.3s;
+    color: white;
+    cursor: pointer;
 }
 .header ul li:hover{
-    color: limegreen;
+    color: black;
 }
 .banner{
     border: 1px solid black;
@@ -44,10 +51,17 @@
 }
 .banner input{
     height: 80px;
+    font-size: 20px;
     width: 50%;
+    transition: 0.4s;
     padding: 25px;
     outline: none;
     border-radius: 10px;
+    border: 1.5px solid limegreen;
+}
+.banner input:hover{
+    border: transparent;
+    box-shadow: 0 3px 12px rgba(50, 205, 50, 0.53);
 }
 .sign-in{
     margin-bottom: 100px;
@@ -103,10 +117,11 @@
     transition: 300ms;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(164, 164, 164, 0.693);
+    box-shadow: 0 5px 15px rgba(144, 144, 144, 0.518);
 }
 .cta div:hover{
     transform: scale(1.05);
+    box-shadow: 0 7px 15px rgba(164, 164, 164, 0.803);
 }
 .cta div:hover a{
     background-color: limegreen;
@@ -139,3 +154,21 @@
     border: 1px solid limegreen;
     margin-bottom: 40px;
 }
+.dropdown{
+    display: flex;
+    padding: 30px 0;
+    margin-bottom: 100px;
+}
+.dropdown div{
+    text-align: center;
+    flex: 1;
+    border-left: 1px solid rgb(95, 95, 95);
+}
+.dropdown:first-child{
+    border: none;
+}
+.dropdown div h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+

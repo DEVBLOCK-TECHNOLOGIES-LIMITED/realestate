@@ -3,7 +3,6 @@ import React from "react";
 function Home(){
     return(
         <div className="home">
-
             <div className="banner">
                 <h1>Agents. Tours. Loans. Homes.</h1>
                 <input type="text" placeholder="Search with home features & locations"/>
@@ -47,6 +46,22 @@ function Home(){
                             <a>Find rentals</a>
                         </article>
                     </div>
+                </div>
+
+                <div className="dropdown">
+                    <div>
+                        <h5>Real Estate</h5>
+                    </div>
+                    <div>
+                        <h5>Rentals</h5>
+                    </div>
+                    <div>
+                        <h5>Mortgage Rates</h5>
+                    </div>
+                    <div>
+                        <h5>Browse Homes</h5>
+                    </div>
+
                 </div>
             </section>
         </div>

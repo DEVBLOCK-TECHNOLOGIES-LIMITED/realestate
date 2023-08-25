@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from './images/logo.png'
 
 function Header(){
     return(
@@ -15,7 +15,7 @@ function Header(){
             </div>
             
             <div className="logo">
-                <img src="" alt="" />
+                <img src={logo} alt="" />
             </div>
 
             <div>
