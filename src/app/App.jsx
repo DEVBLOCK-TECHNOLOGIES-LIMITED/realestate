@@ -9,10 +9,12 @@ import Header from '../components/header'
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={<Header />}/>
-      <Route exact path="/" element={<Home />}/>
-    </Routes>
+    <>
+      <Header/>
+      <Routes>
+        <Route exact path="/" element={<Home />}/>
+      </Routes>
+    </>
   )
 }
 
