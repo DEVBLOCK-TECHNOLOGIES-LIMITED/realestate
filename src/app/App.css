@@ -12,7 +12,6 @@
     align-items: center;
 }
 .header div{
-    border: 1px solid black;
     flex: 1;
 }
 .header .logo{
@@ -26,20 +25,117 @@
 }
 .header ul li{
     display: inline-block;
+    transition: 0.3s;
+}
+.header ul li:hover{
+    color: limegreen;
 }
 .banner{
     border: 1px solid black;
     height: 50vh;
+    text-align: center;
+    border: 100px;
     padding-top: 100px;
 }
 
 .banner h1{
     margin-bottom: 50px;
     font-size: 35px;
-    text-align: center;
 }
 .banner input{
-    height: 100px;
+    height: 80px;
     width: 50%;
     padding: 25px;
+    outline: none;
+    border-radius: 10px;
+}
+.sign-in{
+    margin-bottom: 100px;
+}
+.sign-in article{
+    width: 30%;
+    transform: translateY(+50%);
+    text-align: center;
+    display: inline-block;
+}
+.sign-in figure{
+    height: 200px;
+    width: 60%;
+    float: right;
+    border: 1px solid black;
+}
+.sign-in h3{
+    font-size: 19px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.sign-in p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.sign-in a{
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.3s;
+    cursor: pointer;;
+    color: limegreen;
+    border-radius: 5px;
+    border: 1px solid limegreen;
+} 
+.sign-in a:hover{
+    background-color: limegreen;
+    color: white;
+}
+.width-80{
+    width: 80%;
+    margin: auto;
+}
+.cta{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.cta div{
+    text-align: center;
+    width: 32%;
+    padding: 20px;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(164, 164, 164, 0.693);
+}
+.cta div:hover{
+    transform: scale(1.05);
+}
+.cta div:hover a{
+    background-color: limegreen;
+    color: white;
+}
+.cta div img{
+    height: 200px;
+    margin-bottom: 30px;
+    display: block;
+    border: 1px solid black;
+}
+.cta div h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.cta div p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.cta div a{
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.3s;
+    cursor: pointer;;
+    color: limegreen;
+    border-radius: 5px;
+    border: 1px solid limegreen;
+    margin-bottom: 40px;
 }

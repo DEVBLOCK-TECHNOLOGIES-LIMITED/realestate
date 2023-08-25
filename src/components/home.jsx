@@ -8,43 +8,47 @@ function Home(){
                 <h1>Agents. Tours. Loans. Homes.</h1>
                 <input type="text" placeholder="Search with home features & locations"/>
             </div>
-
-            <div className="sign-in">
-                <div>
-                    <h3>Get home recommendations</h3>
-                    <p>Sign in for a morw personalized experience</p>
-                    <button>Sign in</button>
+            <section className="width-80">
+                <div className="sign-in">
+                    <article>
+                        <h3>Get home recommendations</h3>
+                        <p>Sign in for a more personalized experience.</p>
+                        <a>Sign in</a>
+                    </article>
+                    <figure>
+                        <img src="" alt="" />
+                    </figure>
                 </div>
-            </div>
 
-            <div className="cta">
-                <div>
+                <div className="cta">
+                    <div>
+                        <img src="" alt="" />
+                        <article>
+                            <h4>Buy a home</h4>
+                            <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+                            <a>Browse homes</a>
+                        </article>
+                    </div>
+
+                    <div>
                     <img src="" alt="" />
-                    <article>
-                        <h4>Buy a home</h4>
-                        <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                        <button>Browse homes</button>
-                    </article>
-                </div>
+                        <article>
+                            <h4>Buy a home</h4>
+                            <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+                            <a>Find a local agent</a>
+                        </article>
+                    </div>
 
-                <div>
-                <img src="" alt="" />
-                    <article>
-                        <h4>Buy a home</h4>
-                        <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                        <button>Find a local agent</button>
-                    </article>
+                    <div>
+                    <img src="" alt="" />
+                        <article>
+                            <h4>Buy a home</h4>
+                            <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+                            <a>Find rentals</a>
+                        </article>
+                    </div>
                 </div>
-
-                <div>
-                <img src="" alt="" />
-                    <article>
-                        <h4>Buy a home</h4>
-                        <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                        <button>Find rentals</button>
-                    </article>
-                </div>
-            </div>
+            </section>
         </div>
     )
 }
