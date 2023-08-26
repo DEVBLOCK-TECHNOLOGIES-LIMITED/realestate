@@ -6,8 +6,8 @@
 }
 
 .header{
+    margin-top: 20px;
     display: flex;
-    background-color: limegreen;
     height: 70px;
     align-items: center;
 }
@@ -21,6 +21,7 @@
 .header .logo img{
     width: 40%;
     transform: translateY(+20%);
+    filter: invert(100%);
 }
 .header ul{
     list-style: none;
@@ -31,7 +32,6 @@
 .header ul li{
     display: inline-block;
     transition: 0.3s;
-    color: white;
     cursor: pointer;
 }
 .header ul li a{
@@ -43,10 +43,10 @@
 }
 .banner{
     border: 1px solid black;
-    height: 50vh;
+    height: 35vh;
     text-align: center;
     border: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .banner h1{
@@ -54,19 +54,21 @@
     font-size: 35px;
 }
 .banner input{
-    height: 80px;
     font-size: 20px;
     width: 50%;
     transition: 0.4s;
-    padding: 25px;
+    padding: 20px;
     outline: none;
     border-radius: 10px;
-    border: 1.5px solid limegreen;
+    border: 1.5px solid #42f5bc;
 }
-.banner input:hover{
-    border: transparent;
+
+.banner input:focus{
+    border: 1px solid lightgrey;
     box-shadow: 0 3px 12px rgba(50, 205, 50, 0.53);
 }
+
+
 .sign-in{
     margin-bottom: 100px;
 }
@@ -97,26 +99,30 @@
     padding: 10px 20px;
     transition: 0.3s;
     cursor: pointer;;
-    color: limegreen;
+    color: #42f5bc;
     border-radius: 5px;
-    border: 1px solid limegreen;
+    border: 1px solid #42f5bc;
 } 
 .sign-in a:hover{
-    background-color: limegreen;
+    background-color: #42f5bc;
     color: white;
 }
 .width-80{
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .cta{
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     justify-content: space-between;
+    width: 1100px;
+    margin: auto;
 }
 .cta div{
     text-align: center;
-    width: 32%;
+    width: 30%;
     padding: 20px;
     transition: 300ms;
     cursor: pointer;
@@ -128,24 +134,24 @@
     box-shadow: 0 7px 15px rgba(164, 164, 164, 0.803);
 }
 .cta div:hover a{
-    background-color: limegreen;
+    background-color: #42f5bc;
     color: white;
 }
 .cta div img{
-    height: 200px;
-    margin-bottom: 30px;
+    height: 150px;
+    margin-bottom: 20px;
     display: block;
     border: 1px solid black;
 }
 .cta div h4{
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .cta div p{
     font-size: 17px;
     font-weight: 500;
     line-height: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .cta div a{
     font-size: 18px;
@@ -153,9 +159,9 @@
     padding: 10px 20px;
     transition: 0.3s;
     cursor: pointer;;
-    color: limegreen;
+    color: #42f5bc;
     border-radius: 5px;
-    border: 1px solid limegreen;
+    border: 1px solid #42f5bc;
     margin-bottom: 40px;
 }
 .dropdown{
@@ -184,7 +190,7 @@
     margin-bottom: 30px;
 }
 .advertise h1 span{
-    color: limegreen;
+    color: #42f5bc;
     font-size: 26px;
 }
 .advertise p{
@@ -213,7 +219,7 @@
     box-shadow: 0 5px 12px rgba(50, 205, 50, 0.473);
 }
 .advertise .industry div:hover a{
-    color: limegreen;
+    color: #42f5bc;
 }
 .industry div img{
     height: 150px;
@@ -231,13 +237,13 @@
     font-weight: 600;
     font-size: 17px;
     text-decoration: none;
-    border: 1px solid limegreen;
+    border: 1px solid #42f5bc;
     padding: 15px 30px;
     margin-bottom: 40px;
     color: black;
     transition: 0.4s;
 }
 .advertise .industry div a:hover{
-    background-color: rgba(50, 205, 50, 0.685);
+    background-color: rgba(66, 245, 188, 0.685);
     color: white;
 }
