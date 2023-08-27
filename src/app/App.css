@@ -79,7 +79,7 @@ header ul li:hover {
     width: 700px;
     border-radius: 10px;
     border: 1.5px solid #42f5bc;
-    padding: 5px;
+    padding: 10px;
 }
 
 .search input {
@@ -331,6 +331,7 @@ header ul li:hover {
         display: flex;
         padding: 10px;
         justify-content:space-between;
+        margin-top: 5px;
     }
 
     header .logo{

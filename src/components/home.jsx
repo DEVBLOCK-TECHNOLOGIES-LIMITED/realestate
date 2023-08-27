@@ -9,7 +9,7 @@ function Home(){
                 <h1>Agents. Tours. Loans. Homes.</h1>
                 <div className="search">
                 <input type="text" placeholder="Search with home features & locations"/>
-                <BiSearch size={25}/>
+                <BiSearch size={30}/>
                 </div>
             </div>
             <section className="width-80">
