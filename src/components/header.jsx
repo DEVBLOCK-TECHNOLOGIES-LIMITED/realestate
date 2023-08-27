@@ -1,10 +1,12 @@
 import React from "react";
 import logo from './images/logo.png'
 import { Link } from "react-router-dom";
+import {HiOutlineMenuAlt2} from 'react-icons/hi'
 
 function Header(){
     return(
-        <div className="header">
+        <>
+            <header className="bdevice">
             <div>
                 <ul>
                     <li>Buy</li>
@@ -29,7 +31,18 @@ function Header(){
                     <li>Sign In</li>
                 </ul>
             </div>
-        </div>
+        </header>
+
+        <header className="sdevice">
+            <HiOutlineMenuAlt2 size={25}/>
+
+            <div className="logo">
+            <img src={logo} alt="" srcset="" />
+            </div>
+
+            <p>Sign In</p>
+        </header>
+        </>
     )
 }
 
