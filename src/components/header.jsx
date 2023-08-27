@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {HiOutlineMenuAlt2} from 'react-icons/hi'
+import logo from './images/logo.png'
 
 function Header(){
     return(

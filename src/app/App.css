@@ -27,7 +27,7 @@ header div {
 header .logo {
     flex: 0.7;
     text-align: center;
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 header .logo img {
@@ -78,7 +78,7 @@ header ul li:hover {
     align-items: center;
     width: 700px;
     border-radius: 10px;
-    border: 1.5px solid #42f5bc;
+    border: 1.5px solid #0047AB;
     padding: 10px;
 }
 
@@ -139,13 +139,13 @@ header ul li:hover {
     padding: 10px 20px;
     transition: 0.3s;
     cursor: pointer;
-    color: #42f5bc;
+    color: #0047AB;
     border-radius: 5px;
     border: 1px solid;
 }
 
 .sign-in a:hover {
-    background-color: #42f5bc;
+    background-color: #0047AB;
     color: white;
 }
 
@@ -180,7 +180,7 @@ header ul li:hover {
 }
 
 .cta div:hover a {
-    background-color: #42f5bc;
+    background-color: #0047AB;
     color: white;
 }
 
@@ -211,9 +211,9 @@ header ul li:hover {
     transition: 0.3s;
     cursor: pointer;
     ;
-    color: #42f5bc;
+    color: #0047AB;
     border-radius: 5px;
-    border: 1px solid #42f5bc;
+    border: 1px solid #0047AB;
     margin-bottom: 40px;
 }
 

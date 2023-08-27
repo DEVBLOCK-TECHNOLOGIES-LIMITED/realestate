@@ -1,9 +1,9 @@
 import React from "react";
 import {BiSearch} from 'react-icons/bi'
-import footerImage from './images/footer-art.svg.png'
-import buyImage from './images/for-sale.jpg'
-import rentImage from './images/4153051.jpg'
-import payImage from './images/9045613.jpg'
+import footerImage from './images/footer-art.svg'
+import buyImage from './images/Buy_a_home.webp'
+import rentImage from './images/Rent_a_home.webp'
+import payImage from './images/Buy_a_home.webp'
 import signinImage from './images/pexels-binyamin-mellish-1396122.jpg'
 
 function Home(){
