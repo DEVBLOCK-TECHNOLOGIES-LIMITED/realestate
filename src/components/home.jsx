@@ -1,11 +1,16 @@
 import React from "react";
+import {BiSearch} from 'react-icons/bi'
+import footerImage from './images/footer-art.svg.png'
 
 function Home(){
     return(
         <div className="home">
             <div className="banner">
                 <h1>Agents. Tours. Loans. Homes.</h1>
+                <div className="search">
                 <input type="text" placeholder="Search with home features & locations"/>
+                <BiSearch size={25}/>
+                </div>
             </div>
             <section className="width-80">
                 <div className="sign-in">
@@ -62,6 +67,10 @@ function Home(){
                         <h5>Browse Homes</h5>
                     </div>
 
+                </div>
+
+                <div className="footer">
+                    <img src={footerImage} alt="" srcset="" />
                 </div>
             </section>
         </div>
