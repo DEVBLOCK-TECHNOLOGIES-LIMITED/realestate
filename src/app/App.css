@@ -111,10 +111,15 @@ header ul li:hover {
 }
 
 .sign-in figure {
-    height: 200px;
+    height: 300px;
     width: 60%;
     float: right;
-    border: 1px solid black;
+}
+
+.sign-in figure img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
 .sign-in h3 {
@@ -183,7 +188,8 @@ header ul li:hover {
     height: 150px;
     margin-bottom: 20px;
     display: block;
-    border: 1px solid black;
+    object-fit: contain;
+    width: 100%;
 }
 
 .cta div h4 {
@@ -322,6 +328,7 @@ header ul li:hover {
     display: flex;
     justify-content: center;
 }
+
 
 @media only screen and (max-width : 600px) {
     .bdevice{

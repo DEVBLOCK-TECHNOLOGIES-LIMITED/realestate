@@ -1,6 +1,10 @@
 import React from "react";
 import {BiSearch} from 'react-icons/bi'
 import footerImage from './images/footer-art.svg.png'
+import buyImage from './images/for-sale.jpg'
+import rentImage from './images/4153051.jpg'
+import payImage from './images/9045613.jpg'
+import signinImage from './images/pexels-binyamin-mellish-1396122.jpg'
 
 function Home(){
     return(
@@ -20,13 +24,13 @@ function Home(){
                         <a>Sign in</a>
                     </article>
                     <figure>
-                        <img src="" alt="" />
+                        <img src={signinImage} alt="" />
                     </figure>
                 </div>
 
                 <div className="cta">
                     <div>
-                        <img src="" alt="" />
+                        <img src={payImage} alt="" />
                         <article>
                             <h4>Buy a home</h4>
                             <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
@@ -35,7 +39,7 @@ function Home(){
                     </div>
 
                     <div>
-                    <img src="" alt="" />
+                    <img src={buyImage} alt="" />
                         <article>
                             <h4>Buy a home</h4>
                             <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
@@ -44,9 +48,9 @@ function Home(){
                     </div>
 
                     <div>
-                    <img src="" alt="" />
+                    <img src={rentImage} alt="" />
                         <article>
-                            <h4>Buy a home</h4>
+                            <h4>Rent a home</h4>
                             <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
                             <a>Find rentals</a>
                         </article>
