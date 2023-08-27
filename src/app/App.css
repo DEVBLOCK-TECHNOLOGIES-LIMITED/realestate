@@ -9,7 +9,7 @@ header {
     margin-top: 20px;
     height: 70px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .sdevice{
@@ -27,7 +27,7 @@ header div {
 header .logo {
     flex: 0.7;
     text-align: center;
-    transform: scale(2);
+    transform: scale(1.85);
 }
 
 header .logo img {
@@ -341,8 +341,13 @@ header ul li:hover {
         margin-top: 5px;
     }
 
+    header{
+        margin-bottom: 20px;
+    }
+
     header .logo{
         margin-left: 20px;
+        transform: scale(2);
     }
 
     .search{
