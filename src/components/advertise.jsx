@@ -8,6 +8,7 @@ function Advertise(){
             <h1>Drive Success with <span>Marksmen's</span> Business Solutions</h1>
             <p>Reach millions of buyers, sellers and renters on the largest real estate network on the web.</p>
             <h2>Select your industry to get started</h2>
+            
             <div className="industry">
                 <div>
                     <img src="" alt="" />
