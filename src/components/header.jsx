@@ -1,48 +1,72 @@
 import React from "react";
-import logo from './images/logo.png'
 import { Link } from "react-router-dom";
-import {HiOutlineMenuAlt2} from 'react-icons/hi'
+import { HiOutlineMenuAlt2 } from 'react-icons/hi'
+import logo from './images/logo.png'
+import { BiSearch } from 'react-icons/bi'
 
-function Header(){
-    return(
-        <>
+function Header() {
+    return (
+        <div>
+
+            <div className="bigscreen">
             <header className="bdevice">
-            <div>
-                <ul>
-                    <li>Buy</li>
-                    <li>Rent</li>
-                    <li>Sell</li>
-                    <li>Home Loans</li>
-                    <li>Agent finder</li>
-                </ul>
-            </div>
+                <div>
+                    <ul>
+                        <li>Buy</li>
+                        <li>Rent</li>
+                        <li>Sell</li>
+                        <li>Home Loans</li>
+                        <li>Agent finder</li>
+                    </ul>
+                </div>
+
+                <div className="logo">
+                    <img src={logo} alt="" />
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Manage Rentals</li>
+                        <li>
+                            <Link to='advertise'>Advertise</Link>
+                        </li>
+                        <li>Help</li>
+                        <li>Sign In</li>
+                    </ul>
+                </div>
+            </header>
+
             
-            <div className="logo">
-                <img src={logo} alt="" />
+            <div className="banner">
+                <h1>Agents. Tours. Short-Stay. Homes.</h1>
+                <div className="search">
+                    <input type="text" placeholder="Search with home features & locations" />
+                    <BiSearch size={30} />
+                </div>
+            </div>
             </div>
 
-            <div>
-               <ul>
-                    <li>Manage Rentals</li>
-                    <li>
-                        <Link to='advertise'>Advertise</Link>
-                    </li>
-                    <li>Help</li>
-                    <li>Sign In</li>
-                </ul>
+            <div className="smallscreen">
+            <header className="sdevice">
+                <HiOutlineMenuAlt2 color="white" size={25} />
+
+                <div className="logo">
+                    <img src={logo} alt="" srcset="" />
+                </div>
+
+                <p>Sign In</p>
+            </header>
+
+            <div className="banner">
+                <h1>Agents. Tours. Short-Stay. Homes.</h1>
+                <div className="search">
+                    <input type="text" placeholder="Search with home features & locations" />
+                    <BiSearch size={30} />
+                </div>
             </div>
-        </header>
-
-        <header className="sdevice">
-            <HiOutlineMenuAlt2 size={25}/>
-
-            <div className="logo">
-            <img src={logo} alt="" srcset="" />
             </div>
 
-            <p>Sign In</p>
-        </header>
-        </>
+        </div>
     )
 }
 
