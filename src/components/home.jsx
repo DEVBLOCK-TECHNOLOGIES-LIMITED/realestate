@@ -1,5 +1,4 @@
 import React from "react";
-import {BiSearch} from 'react-icons/bi'
 import footerImage from './images/footer-art.svg'
 import buyImage from './images/Buy_a_home.webp'
 import rentImage from './images/Rent_a_home.webp'
@@ -9,13 +8,6 @@ import signinImage from './images/pexels-binyamin-mellish-1396122.jpg'
 function Home(){
     return(
         <div className="home">
-            <div className="banner">
-                <h1>Agents. Tours. Short-Stay. Homes.</h1>
-                <div className="search">
-                <input type="text" placeholder="Search with home features & locations"/>
-                <BiSearch size={30}/>
-                </div>
-            </div>
             <section className="width-80">
                 <div className="sign-in">
                     <article>

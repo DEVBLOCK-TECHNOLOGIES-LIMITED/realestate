@@ -9,7 +9,7 @@ header {
     margin-top: 20px;
     height: 70px;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .sdevice{
@@ -27,7 +27,7 @@ header div {
 header .logo {
     flex: 0.7;
     text-align: center;
-    transform: scale(1.85);
+    transform: scale(1.55);
 }
 
 header .logo img {
@@ -66,9 +66,11 @@ header ul li:hover {
     padding-top: 50px;
 }
 
+
 .banner h1 {
     margin-bottom: 50px;
     font-size: 35px;
+    color: white;
 }
 
 
@@ -76,9 +78,9 @@ header ul li:hover {
     margin: auto;
     display: flex;
     align-items: center;
-    width: 700px;
+    width: 500px;
     border-radius: 10px;
-    border: 1.5px solid #0047AB;
+    background-color: white;
     padding: 10px;
 }
 
@@ -329,8 +331,32 @@ header ul li:hover {
     justify-content: center;
 }
 
+.smallscreen{
+    display: none;
+    margin-bottom: 100px;
+}
+
+.bigscreen{
+    display: flex;
+    flex-direction: column;
+}
+
+.bigscreen header{
+    margin-bottom: 60px;
+}
+
+.bigscreen .banner{
+    background: url('../components/images/real-estate2-768x432.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 350px;
+    margin-bottom: 100px;
+}
+
+
 
 @media only screen and (max-width : 600px) {
+
     .bdevice{
         display: none;
     }
@@ -341,13 +367,33 @@ header ul li:hover {
         margin-top: 5px;
     }
 
+    .smallscreen{
+        display: flex;
+        flex-direction: column;
+        background-image: url('../components/images/real-estate2-768x432.jpg');
+    }
+
+    .bigscreen{
+        display: none;
+    }
+
     header{
         margin-bottom: 20px;
+        color: white;
+        font-weight: bold;
     }
 
     header .logo{
         margin-left: 20px;
         transform: scale(2);
+    }
+
+    .banner h1{
+        color: white;
+    }
+
+    header .logo img{
+        filter: invert(0%);
     }
 
     .search{
