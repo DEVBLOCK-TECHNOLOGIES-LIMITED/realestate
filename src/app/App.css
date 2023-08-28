@@ -228,7 +228,7 @@ header ul li:hover {
     align-items: center;
 }
 
-.dropdown:first-child {
+.dropdown div:first-of-type {
     border: none;
 }
 
