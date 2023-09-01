@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import footerImage from './images/footer-art.svg'
 import buyImage from './images/Buy_a_home.webp'
 import rentImage from './images/Rent_a_home.webp'
@@ -22,30 +23,36 @@ function Home(){
 
                 <div className="cta">
                     <div>
+                      <Link>
                         <img src={payImage} alt="" />
                         <article>
                             <h4>Buy a home</h4>
                             <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                            <a>Browse homes</a>
+                            <button>Browse homes</button>
                         </article>
+                      </Link>
                     </div>
 
                     <div>
-                    <img src={buyImage} alt="" />
+                      <Link>
+                        <img src={buyImage} alt="" />
                         <article>
                             <h4>Buy a home</h4>
                             <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                            <a>Find a local agent</a>
+                            <button>Find a local agent</button>
                         </article>
+                      </Link>
                     </div>
 
                     <div>
-                    <img src={rentImage} alt="" />
+                      <Link>
+                        <img src={rentImage} alt="" />
                         <article>
                             <h4>Rent a home</h4>
                             <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                            <a>Find rentals</a>
+                            <button>Find rentals</button>
                         </article>
+                      </Link>
                     </div>
                 </div>
 
