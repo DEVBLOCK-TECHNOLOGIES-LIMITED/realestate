@@ -4,6 +4,7 @@ import './App.css'
 import Home from '../components/home'
 import Header from '../components/header'
 import Advertise from '../components/advertise';
+import AddProperty from '../components/addproperty';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route exact path="advertise" element={<Advertise />}/>
+        <Route exact path="add" element={<AddProperty />}/>
       </Routes>
     </>
   )

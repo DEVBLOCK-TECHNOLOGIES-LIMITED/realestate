@@ -15,7 +15,9 @@ function Header() {
                         <li>Buy</li>
                         <li>Rent</li>
                         <li>Sell</li>
-                        <li>Home Loans</li>
+                        <li>
+                            <Link to='add'>Add property</Link>
+                        </li>
                         <li>Agent finder</li>
                     </ul>
                 </div>

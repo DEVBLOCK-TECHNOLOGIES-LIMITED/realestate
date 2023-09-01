@@ -1,0 +1,94 @@
+.add-property{
+    display: inline-block;
+    width:80%;
+    padding: 20px;
+    border: 1px solid black;
+}
+.add-property h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.add-property h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.add-property div div{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.add-property label{
+    color: grey;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+}
+.add-property input,.add-property select{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1.5px solid rgba(187, 187, 187, 0.962);
+    border-radius: 7px;
+}
+.add-property textarea{
+    min-width: 100%;
+    max-width: 100%;
+    border: 1.5px solid rgba(187, 187, 187, 0.962);
+    outline: none;
+    border-radius: 7px;
+    min-height: 80px;
+    max-height: 200px;
+}
+.add-property label span{
+    color: rgb(194, 5, 5);
+}
+
+.info div:first-of-type{
+    grid-column: span 4;
+    display: block;
+}
+.info div:nth-of-type(2){
+    grid-column: span 4;
+    display: block;
+}
+.info{
+    display: grid;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    grid-column-gap: 1.35%;
+    grid-template-columns: 24% 24% 24% 24% 24%;
+}   
+.location{
+    display: grid;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    grid-template-columns: 32% 32% 32%;
+}
+.location div:last-of-type{
+    grid-column: span 4;
+}
+.price{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+}
+.add-info{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between; 
+}
+.add-info div:nth-of-type(7){
+    grid-column: span 2;
+}
+.add-info div:nth-of-type(8){
+    grid-column: span 2;
+}
+.add-info input[type='checkbox']{
+    width: unset;
+    display: inline-block;
+    height: unset;
+}
+.rules{
+    width: 10%;
+    float: right;
+    display: inline-block;
+}

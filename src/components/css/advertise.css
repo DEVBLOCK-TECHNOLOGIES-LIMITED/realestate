@@ -10,7 +10,7 @@
     margin-bottom: 30px;
 }
 .advertise h1 span{
-    color: #42f5bc;
+    color: #02066f;
     font-size: 26px;
 }
 .advertise p{
@@ -35,10 +35,10 @@
 }
 .advertise .industry div:hover{
     transform: scale(1.05);
-    box-shadow: 0 5px 12px #42f5bc;
+    box-shadow: 0 5px 12px #02066f82;
 }
 .advertise .industry div:hover a{
-    color: #42f5bc;
+    color: #02066f;
 }
 .industry div img{
     height: 150px;
@@ -56,14 +56,14 @@
     font-weight: 600;
     font-size: 17px;
     text-decoration: none;
-    border: 1px solid #42f5bc;
+    border: 1px solid #02066f;
     padding: 15px 30px;
     margin-bottom: 40px;
     color: black;
     transition: 0.4s;
 }
 .advertise .industry div a:hover{
-    background-color: #42f5bc;
+    background-color: #02066f;
     color: white;
 }
 
