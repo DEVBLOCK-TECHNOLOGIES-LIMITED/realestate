@@ -61,7 +61,6 @@ header ul li:hover {
     border: 1px solid black;
     height: 35vh;
     text-align: center;
-    border: 100px;
     padding-top: 50px;
 }
 
@@ -373,7 +372,6 @@ header ul li:hover {
     .smallscreen{
         display: flex;
         flex-direction: column;
-        background-image: url('../components/images/real-estate2-768x432.jpg');
     }
 
     .bigscreen{
@@ -382,7 +380,7 @@ header ul li:hover {
 
     header{
         margin-bottom: 20px;
-        color: white;
+        color: black;
         font-weight: bold;
     }
 
@@ -392,15 +390,24 @@ header ul li:hover {
     }
 
     .banner h1{
-        color: white;
+        color: black;
     }
 
-    header .logo img{
-        filter: invert(0%);
+    .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        height: 30vh;
+        border: none;
+        box-shadow: 0 1px 10px rgba(128, 128, 128, 0.214);
+
     }
 
     .search{
         width: 80vw;
+        border: 1px solid #02066F;
     }
 
     .search input{
