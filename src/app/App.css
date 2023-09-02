@@ -33,7 +33,6 @@ header .logo {
 header .logo img {
     width: 40%;
     transform: translateY(+20%);
-    filter: invert(100%);
 }
 
 header ul {
@@ -379,7 +378,7 @@ header ul li:hover {
 
     .bigscreen{
         display: none;
-    }
+    } 
 
     header{
         margin-bottom: 20px;

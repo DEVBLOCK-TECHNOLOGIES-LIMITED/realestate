@@ -5,7 +5,7 @@ function AddProperty (){
     return(
       <section className="width-80">
         <div className="add-property">
-            <h1>Add Listing</h1>
+            <h2>Add Listing</h2>
 
             <form action="">
                 <h3>Unit Information</h3>
@@ -19,7 +19,9 @@ function AddProperty (){
                         <label htmlFor="">Unit image<span>*</span></label>
                     </div>
                     <br/>
-                    <div>
+
+                    <div className="listInfo">
+                    <div className="ms">
                         <label htmlFor="">Market Status<span>*</span></label>
                         <select name="" id="">
                             <option value="Available">Available</option>
@@ -28,7 +30,7 @@ function AddProperty (){
                         </select>
                     </div>
 
-                    <div>
+                    <div className="ct">
                         <label htmlFor="">Category<span>*</span></label>
                         <select name="" id="">
                             <option value="For Rent">For Rent</option>
@@ -36,7 +38,7 @@ function AddProperty (){
                             <option value="Short Let">Short Let</option>
                         </select>
                     </div>
-                    <div>
+                    <div className="typ">
                         <label htmlFor="">Type<span>*</span></label>
                         <select name="" id="">
                             <option value="Flat">Flat</option>
@@ -46,7 +48,7 @@ function AddProperty (){
                         </select>
                     </div>
 
-                    <div>
+                    <div className="st">
                         <label htmlFor="">Subtype<span>*</span></label>
                         <select name="" id="">
                             <option value="Detached Bungalow">Detached Bungalow</option>
@@ -57,12 +59,13 @@ function AddProperty (){
                             <option value="Terraced Duplex">Terraced Duplex</option>
                         </select>
                     </div>
+                    </div>
 
                 </div>
                 
                 <h3>Unit Location</h3>
                 <div className="location">
-                        <div>
+                        <div className="state">
                             <label htmlFor="">State<span>*</span></label>
                             <select name="state">
                                 <option value="Abia">Abia</option>
@@ -105,7 +108,7 @@ function AddProperty (){
                             </select>
                         </div>
 
-                        <div>
+                        <div className="cty">
                             <label htmlFor="">City<span>*</span></label>
                             <select name="city">
                             </select>
@@ -122,14 +125,19 @@ function AddProperty (){
                         </div>
                 </div>
                 
-                <h3>Price</h3>
-                <div className="price">
-                    <div>
-                        <label htmlFor="">Price<span>*</span></label>
-                        <input type="number" maxLength='9'/>
+                <h3>Financials</h3>
+                <div>
+                    <div className="price">
+                        <label htmlFor="">Price(NGN)<span>*</span></label>
+                        <input type="number" placeholder="₦" maxLength='9'/>
+                    </div>
+
+                    <div className="price">
+                        <label htmlFor="">Price(USD)<span>*</span></label>
+                        <input type="number" placeholder="$" maxLength='9'/>
                     </div>
                     
-                    <div>
+                    <div className="frequency">
                         <label htmlFor="">Frequency<span>*</span></label>
                         <select name="" id="">
                             <option value="">per annum</option>
@@ -182,17 +190,22 @@ function AddProperty (){
                         </textarea>
                     </div>
 
-                    <div>
+                    <div className="checkTicks">
+                        
+                    <div className="furnished">
+                        <label htmlFor="">Furnished</label> 
                         <input type="checkbox"/>
-                        <label htmlFor="">Furnished</label>
                     </div>
 
-                    <div>
+                    <div className="serviced">
+                        <label htmlFor="">Serviced</label>
                         <input type="checkbox"/>
-                        <label htmlFor="">Services</label>
+                    </div>
                     </div>
 
+                    <button type="submit">List Property</button>
                 </div>
+
             </form>
         </div>
 
