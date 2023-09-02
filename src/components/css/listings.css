@@ -1,0 +1,41 @@
+.listings{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: space-around;
+}
+.listing{
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 10px rgba(180, 180, 180, 0.567);
+}
+.listing:hover{
+    box-shadow: 0 5px 10px rgba(146, 146, 146, 0.836);
+}
+.listing img{
+    border: 1px solid black;
+    height: 100px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.listing p{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.listing span{
+    display: inline-block;
+    width: 50%;
+    font-size: 13px;
+}
+.listing .fav{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    float: right;
+}
+
