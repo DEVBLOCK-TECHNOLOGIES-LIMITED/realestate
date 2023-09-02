@@ -19,7 +19,7 @@ function Header() {
                         <li>Sell</li>
                         <li>
                             <Link to='add'>Add property</Link>
-                        </li>
+                        </li>  
                         <li>Agent finder</li>
                     </ul>
                 </div>
