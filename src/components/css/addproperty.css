@@ -25,6 +25,7 @@
 .add-property input,.add-property select{
     width: 100%;
     height: 30px;
+    padding-left: 10px;
     outline: none;
     border: 1.5px solid rgba(187, 187, 187, 0.962);
     border-radius: 7px;
@@ -59,12 +60,12 @@
 }   
 .location{
     display: grid;
-    margin-bottom: 20px;
-    justify-content: space-between;
+    margin-bottom: 20px;    
+    justify-content: space-around;
     grid-template-columns: 32% 32% 32%;
 }
 .location div:last-of-type{
-    grid-column: span 4;
+    grid-column: span 3;
 }
 .price{
     display: grid;
