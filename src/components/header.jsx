@@ -12,7 +12,9 @@ function Header() {
             <header className="bdevice">
                 <div>
                     <ul>
-                        <li>Buy</li>
+                        <li>
+                            <Link to='buy'>Buy</Link>
+                        </li>
                         <li>Rent</li>
                         <li>Sell</li>
                         <li>
