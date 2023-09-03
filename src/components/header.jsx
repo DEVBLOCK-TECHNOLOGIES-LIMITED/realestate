@@ -50,7 +50,7 @@ function Header() {
 
             <div className="smallscreen">
             <header className="sdevice">
-                <HiOutlineMenuAlt2 color="white" size={25} />
+                <HiOutlineMenuAlt2  size={25} />
 
                 <div className="logo">
                     <img src={logo} alt="" srcset="" />
