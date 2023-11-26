@@ -3,75 +3,91 @@ import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt2 } from 'react-icons/hi'
 import logo from './images/logo.png'
 import { BiSearch } from 'react-icons/bi'
+import { useState, useEffect } from "react";
 
 function Header() {
+    const [drawer, setDrawer] = useState(false)
+
+    const openDrawer = () => {
+        document.querySelector('.drawer').style.width = '80vw'
+    }
+
+    const closeDrawer =()=>{
+        document.querySelector('.drawer').style.width = '0vw'
+    }
+
     return (
         <div>
-
             <div className="bigscreen">
-            <header className="bdevice">
-                <div>
-                    <ul>
-                        <li>
-                            <Link to='buy'>Buy</Link>
-                        </li>
+                <header className="bdevice">
+                    <div>
+                        <ul>
+                            <li>
+                                <Link to='buy'>Buy</Link>
+                            </li>
+                            <li>Rent</li>
+                            <li>Sell</li>
+                            <li>
+                                <Link to='add'>Add property</Link>
+                            </li>
+                            <li>Agent finder</li>
+                        </ul>
+                    </div>
 
-                        <li>
-                            <Link to='rent'>Rent</Link>
-                        </li>
+                    <div className="logo">
+                        <img src={logo} alt="" />
+                    </div>
 
-                        <li>Sell</li>
-                        <li>
-                            <Link to='add'>Add property</Link>
-                        </li>  
-                        <li>Agent finder</li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li>Manage Rentals</li>
+                            <li>
+                                <Link to='advertise'>Advertise</Link>
+                            </li>
+                            <li>Help</li>
+                            <li>Sign In</li>
+                        </ul>
+                    </div>
+                </header>
+
+
+
+                <div className="banner">
+                    <h1>Agents. Tours. Short-Stay. Homes.</h1>
+                    <div className="search">
+                        <input type="text" placeholder="Search with home features & locations" />
+                        <BiSearch size={30} />
+                    </div>
                 </div>
-
-                <div className="logo">
-                    <img src={logo} alt="" />
-                </div>
-
-                <div>
-                    <ul>
-                        <li>Manage Rentals</li>
-                        <li>
-                            <Link to='advertise'>Advertise</Link>
-                        </li>
-                        <li>Help</li>
-                        <li>Sign In</li>
-                    </ul>
-                </div>
-            </header>
-
-            
-            <div className="banner">
-                <h1>Agents. Tours. Short-Stay. Homes.</h1>
-                <div className="search">
-                    <input type="text" placeholder="Search with home features & locations" />
-                    <BiSearch size={30} />
-                </div>
-            </div>
             </div>
 
             <div className="smallscreen">
-            <header className="sdevice">
-                <HiOutlineMenuAlt2 color="white" size={25} />
+                <header className="sdevice">
+                    
+                    <div className="menu" onClick={openDrawer}>
+                        <HiOutlineMenuAlt2 size={25} />
+                    </div>
 
-                <div className="logo">
-                    <img src={logo} alt="" srcset="" />
+                    <div className="logo">
+                        <img src={logo} alt="" srcSet="" />
+                    </div>
+
+                    <p>Sign In</p>
+                </header>
+                <div className="drawer">
+                    <p onClick={closeDrawer}>
+                        
+                    </p>
                 </div>
 
-                <p>Sign In</p>
-            </header>
 
-            <div className="banner">
-                <h1>Agents. Tours. Short-Stay. Homes.</h1>
-                <div className="search">
-                    <input type="text" placeholder="Search with home features & locations" />
-                    <BiSearch size={30} />
+                <div className="banner">
+                    <h1>Agents. Tours. Short-Stay. Homes.</h1>
+                    <div className="search">
+                        <input type="text" placeholder="Search with home features & locations" />
+                        <BiSearch size={30} />
+                    </div>
                 </div>
-            </div>
             </div>
 
         </div>

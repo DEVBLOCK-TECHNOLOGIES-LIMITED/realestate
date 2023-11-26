@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footerImage from './images/footer-art.svg'
-import buyImage from './images/Buy_a_home.webp'
-import rentImage from './images/Rent_a_home.webp'
-import payImage from './images/Buy_a_home.webp'
+import buyImage from './images/For-sale.jpg'
+import rentImage from './images/4153051.jpg'
+import payImage from './images/For-sale.jpg'
 import signinImage from './images/pexels-binyamin-mellish-1396122.jpg'
 
 function Home(){
@@ -73,7 +72,6 @@ function Home(){
                 </div>
 
                 <div className="footer">
-                    <img src={footerImage} alt="" srcset="" />
                 </div>
             </section>
         </div>
