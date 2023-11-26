@@ -8,6 +8,7 @@ import AddProperty from '../components/addproperty';
 import Listings from '../components/listings';
 import Rent from '../components/rent';
 
+
 function App() {
 
   const [listings,setListings]= useState([
