@@ -15,7 +15,11 @@ function Header() {
                         <li>
                             <Link to='buy'>Buy</Link>
                         </li>
-                        <li>Rent</li>
+
+                        <li>
+                            <Link to='rent'>Rent</Link>
+                        </li>
+
                         <li>Sell</li>
                         <li>
                             <Link to='add'>Add property</Link>

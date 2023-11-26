@@ -34,25 +34,18 @@
     border-radius: 2px;
     font-size: 16px;
 }
-
-
 .info{
     display: flex;
     flex-direction: column;
 }
-
 .listInfo{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
 .ms, .ct, .typ, .st{
     width: 100%;
 }
-
-
-
 .ms select, .ct select ,.typ select, .st select{
     min-width: 100%;
 }

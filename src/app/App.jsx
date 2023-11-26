@@ -6,6 +6,7 @@ import Header from '../components/header'
 import Advertise from '../components/advertise';
 import AddProperty from '../components/addproperty';
 import Listings from '../components/listings';
+import Rent from '../components/rent';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         <Route exact path="advertise" element={<Advertise />}/>
         <Route exact path="add" element={<AddProperty />}/>
         <Route exact path="buy" element={<Listings products={listings}/>}/>
+        <Route exact path="rent" element={<Rent/>}/>
       </Routes>
     </>
   )
