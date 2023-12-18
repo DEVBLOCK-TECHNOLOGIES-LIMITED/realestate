@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt2 } from 'react-icons/hi'
 import logo from './images/logo.png'
 import { BiSearch } from 'react-icons/bi'
+import { FaUser } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 function Header() {
@@ -20,7 +21,7 @@ function Header() {
         <div>
             <div className="bigscreen">
                 <header className="bdevice">
-                    <div>
+                    <div className="headertab-1">
                         <ul>
                             <li>
                                 <Link to='buy'>Buy</Link>
@@ -37,7 +38,7 @@ function Header() {
                     </div>
 
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <Link to='/'><img src={logo} alt="" /></Link>
                     </div>
 
                     <div>
@@ -47,7 +48,7 @@ function Header() {
                                 <Link to='advertise'>Advertise</Link>
                             </li>
                             <li>Help</li>
-                            <li>Sign In</li>
+                            <li><FaUser/></li>
                         </ul>
                     </div>
                 </header>
@@ -74,7 +75,7 @@ function Header() {
                         <img src={logo} alt="" srcSet="" />
                     </div>
 
-                    <p>Sign In</p>
+                    <FaUser/>
                 </header>
                 <div className="drawer">
                     <p onClick={closeDrawer}>
