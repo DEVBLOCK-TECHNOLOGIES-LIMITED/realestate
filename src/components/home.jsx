@@ -11,7 +11,7 @@ function Home(){
             <section className="width-80">
                 <div className="sign-in">
                     <article>
-                        <h3>Get home recommendations</h3>
+                        <h3>Get home recommendations hello</h3>
                         <p>Sign in for a more personalized experience.</p>
                         <a>Sign in</a>
                     </article>
