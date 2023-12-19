@@ -1,11 +1,14 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import buyImage from './images/For-sale.jpg'
 import rentImage from './images/4153051.jpg'
 import payImage from './images/For-sale.jpg'
 import signinImage from './images/pexels-binyamin-mellish-1396122.jpg'
+import { useEffect } from "react";
 
 function Home(){
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return(
         <div className="home">
             <section className="width-80">
@@ -33,7 +36,7 @@ function Home(){
                     </div>
 
                     <div>
-                      <Link>
+                      <Link to='buy'>
                         <img src={buyImage} alt="" />
                         <article>
                             <h4>Buy a home</h4>
@@ -44,7 +47,7 @@ function Home(){
                     </div>
 
                     <div>
-                      <Link>
+                      <Link to='rent'>
                         <img src={rentImage} alt="" />
                         <article>
                             <h4>Rent a home</h4>
