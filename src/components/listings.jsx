@@ -1,7 +1,11 @@
 import React from "react";
 import './css/listings.css'
+import { useEffect } from "react";
 
 function Listings({products}){
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return(
         
         <div className="listings">

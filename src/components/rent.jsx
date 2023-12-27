@@ -1,7 +1,10 @@
-import React from 'react'
 import './css/rent.css'
+import { useEffect } from "react";
 
 function Rent(){
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     return(
         <div className="rent">
             <section className="map"></section>
