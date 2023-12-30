@@ -48,7 +48,11 @@ function Header() {
                                 <Link to='advertise'>Advertise</Link>
                             </li>
                             <li>Help</li>
-                            <li><FaUser/></li>
+                            <li>
+                                <Link to='login'>
+                                    <FaUser/>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </header>

@@ -1,5 +1,5 @@
 import './css/rent.css'
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 function Rent(){
     useEffect(()=>{
