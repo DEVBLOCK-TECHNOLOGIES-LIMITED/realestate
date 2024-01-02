@@ -9,8 +9,11 @@ function Listings({products}){
     return(
         
         <div className="listings">
-            <section className="map"></section>
 
+            <div className="filter">
+                <p>make</p>
+            </div>
+            <section className="map"></section>
             <div className="homes">
                 {products.map((item)=>{
                     return(

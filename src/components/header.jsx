@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt2 } from 'react-icons/hi'
-import logo from './images/logo.png'
-import { BiSearch } from 'react-icons/bi'
+import logo from '../assets/images/logo.png'
 import { FaUser } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
@@ -13,7 +12,7 @@ function Header() {
         document.querySelector('.drawer').style.width = '80vw'
     }
 
-    const closeDrawer =()=>{
+    const closeDrawer = () => {
         document.querySelector('.drawer').style.width = '0vw'
     }
 
@@ -48,48 +47,31 @@ function Header() {
                                 <Link to='advertise'>Advertise</Link>
                             </li>
                             <li>Help</li>
-                            <li><FaUser/></li>
+                            <li><FaUser /></li>
                         </ul>
                     </div>
                 </header>
 
-
-
-                <div className="banner">
-                    <h1>Agents. Tours. Short-Stay. Homes.</h1>
-                    <div className="search">
-                        <input type="text" placeholder="Search with home features & locations" />
-                        <BiSearch size={30} />
-                    </div>
-                </div>
             </div>
 
             <div className="smallscreen">
                 <header className="sdevice">
-                    
+
                     <div className="menu" onClick={openDrawer}>
                         <HiOutlineMenuAlt2 size={25} />
                     </div>
 
                     <div className="logo">
-                        <img src={logo} alt="" srcSet="" />
+                        <Link to='/'><img src={logo} alt="" /></Link>
+
                     </div>
 
-                    <FaUser/>
+                    <FaUser />
                 </header>
                 <div className="drawer">
                     <p onClick={closeDrawer}>
-                        
+
                     </p>
-                </div>
-
-
-                <div className="banner">
-                    <h1>Agents. Tours. Short-Stay. Homes.</h1>
-                    <div className="search">
-                        <input type="text" placeholder="Search with home features & locations" />
-                        <BiSearch size={30} />
-                    </div>
                 </div>
             </div>
 

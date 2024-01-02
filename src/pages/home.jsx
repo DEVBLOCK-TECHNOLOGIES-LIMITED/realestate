@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import buyImage from './images/For-sale.jpg'
-import rentImage from './images/4153051.jpg'
-import payImage from './images/For-sale.jpg'
-import signinImage from './images/pexels-binyamin-mellish-1396122.jpg'
+import buyImage from '../assets/images/For-sale.jpg'
+import rentImage from '../assets/images/4153051.jpg'
+import payImage from '../assets/images/For-sale.jpg'
+import signinImage from '../assets/images/pexels-binyamin-mellish-1396122.jpg'
 import { useEffect } from "react";
+import Search from "../components/Search";
 
 function Home(){
     useEffect(()=>{
@@ -11,6 +12,7 @@ function Home(){
     },[])
     return(
         <div className="home">
+            <Search/>
             <section className="width-80">
                 <div className="sign-in">
                     <article>
